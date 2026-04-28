@@ -11,5 +11,5 @@
   connection: local
   tasks: 
     - name:  TASK1
-      ansible.builtin.dnf:
+      ansible.builtin.debug:
         msg: "This is PLAY2 of TASK1"       
