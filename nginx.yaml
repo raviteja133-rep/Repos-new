@@ -1,0 +1,16 @@
+- name: installing nginx
+  hosts: web
+  beccome: yes
+
+  tasks:
+  - name: nginx
+    ansible.builtin.dnf:
+      - name: install nginx
+        state: installed
+
+  - name: start nginx if not started      
+    ansible.builtin.service:
+      - name: nginx
+        state: started
+        enabled: yes
+
