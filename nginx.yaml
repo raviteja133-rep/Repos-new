@@ -1,6 +1,6 @@
 - name: installing nginx
   hosts: web
-  beccome: yes
+  become: yes
 
   tasks:
   - name: nginx
